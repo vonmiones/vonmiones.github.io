@@ -1,0 +1,91 @@
+/*! Coded by Von Miones */
+* {
+    font-family: 'Poppins';
+}
+body{
+    background-image: linear-gradient(rgba(35, 35, 45, 0.80), rgba(35, 35, 45, 0.90)), url('images/mountain.jpg');
+    background-size: cover;
+    height: 100%;
+    width:100%;
+    color:beige;
+}
+.main {
+    padding:20px;
+    height: calc(100vh);
+    .main-wrapper{
+        background-color: rgba(35, 35, 45, 0.30);
+    }
+    .flex {
+        /*! Flex Class */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: calc(80vh);
+        margin-top:2rem;
+        .gap{
+            .gap-2px{
+                gap:2px;
+            }
+            .gap-5px{
+                gap:5px;
+            }
+            .gap-10px{
+                gap:10px;
+            }
+            .gap-15px{
+                gap:15px;
+            }
+        }
+    }
+}   
+// ------------------- Sidebar Starts here
+/*! Sidebar */
+$sidebar_width:200px;
+.sidebar {
+    background-color:  rgba(35, 35, 45, 0.85);
+    width:$sidebar_width;
+    
+    $profile-pic_width:calc($sidebar_width);
+    .profile-pic {
+        background-color:orange;
+        width:$profile-pic_width;
+        height: 190px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        flex-flow: column;
+        background-repeat: no-repeat;
+        background-size: 220px;
+        background-position: center;
+        margin: 0 auto;
+        transition: all 1s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        // position:absolute;
+        // margin-left:calc((#{$profile-pic_width/1.2}));
+        // margin-top:-20px;
+        &:hover {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0px 5px 5px #303030;
+        }
+    } //  Profile Picture
+
+    .profile-info {
+        text-align: center;
+        p {
+            font-size: 8pt;
+            line-height: 10pt;
+            padding:none;
+            margin:0;
+        }
+    }
+}
+
+// ------------------- Sidebar Ends Here
+
+
+
+.content {
+    background-color:rgba(35, 35, 45, 0.50);
+    padding:20px;
+    width:  calc(100% - #{$sidebar_width});
+}
