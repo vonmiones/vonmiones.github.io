@@ -103,6 +103,22 @@ body {
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-color: rgb(255, 106, 0);
 }
+.sidebar .menu ul li:hover a {
+  color: beige;
+}
+.sidebar .menu ul li a {
+  text-decoration: none;
+  color: #222;
+}
+.sidebar .menu ul li a:visited {
+  color: #222;
+}
+.sidebar .menu ul li a:active {
+  color: #222;
+}
+.sidebar .menu ul li a:hover {
+  color: beige;
+}
 
 .spacer {
   display: block;
@@ -114,4 +130,26 @@ body {
   background-color: rgba(35, 35, 45, 0.5);
   padding: 20px;
   width: calc(100% - 200px);
+}
+.content .content-wrapper {
+  overflow: scroll;
+  font-size: smaller;
+}
+.content .content-wrapper .flex {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  flex-basis: 0;
+  flex-wrap: wrap;
+}
+.content .content-wrapper .flex .cards {
+  border: 1px solid beige;
+  height: 200px;
+  width: 200px;
+  line-height: 0px;
+  padding: 5px;
+  margin: 5px;
+}
+.content .content-wrapper .gap-30 {
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */

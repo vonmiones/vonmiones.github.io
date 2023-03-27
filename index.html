@@ -30,21 +30,28 @@
                 <div class="spacer h-10"></div>
                 <div class="menu">
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Resume</li>
-                        <li>Contact</li>
+                        <li><a href="home" title="Home">Home</a></li>
+                        <li><a href="about" title="About">About</a></li>
+                        <li><a href="resume" title="Resume">Resume</a></li>
+                        <li><a href="contact" title="Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="content">
-                content
+            <div class="content" id="content">
+                
             </div>
         </div>
     </div>
 <script>
     $(document).ready(function () {
         $('.profile-pic').css("background-image", 'url(assets/images/profile.png)');
+        $("a").each(function (i, el) {
+            $(el).click(function (e) {
+                e.preventDefault();
+                let page = $(el).attr("href");
+                $("#content").load(page+".html");
+            });
+        });
     });
 </script>    
 </body>

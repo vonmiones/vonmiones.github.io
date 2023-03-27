@@ -103,6 +103,22 @@ $sidebar_width:200px;
                     color:beige;
                     transition: all 0.3s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
                     background-color: rgb(255, 106, 0);
+                    a{                        
+                        color:beige;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color:#222;  
+                    &:visited {
+                        color:#222;  
+                    }
+                    &:active {
+                        color:#222;
+                    }
+                    &:hover {
+                        color:beige;
+                    }
                 }
             }
         }
@@ -119,7 +135,29 @@ $sidebar_width:200px;
 
 
 .content {
-    background-color:rgba(35, 35, 45, 0.50);
+    background-color: rgba(35, 35, 45, 0.50);
     padding:20px;
     width:  calc(100% - #{$sidebar_width});
+    .content-wrapper{
+        overflow: scroll;
+        font-size: smaller;
+        .flex {
+            display: flex;
+            flex-direction: column;
+            flex-flow: row;
+            flex-basis: 0;
+            flex-wrap: wrap;
+            .cards {
+                border:1px solid beige;
+                height:200px;
+                width:200px;
+                line-height: 0px;
+                padding:5px;
+                margin:5px;
+            }
+        }
+        .gap-30 {
+            gap: 10px;
+        }
+    }
 }
