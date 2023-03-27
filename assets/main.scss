@@ -1,15 +1,18 @@
 /*! Coded by Von Miones */
 * {
     font-family: 'Poppins';
+    transition: all 0.3s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 body{
     background-image: linear-gradient(rgba(35, 35, 45, 0.80), rgba(35, 35, 45, 0.90)), url('images/mountain.jpg');
     background-size: cover;
     height: 100%;
     color:beige;
+
 }
 .main {
     padding:20px;
+    max-height: calc(100vh);
     height: calc(100vh);
     .main-wrapper{
         width:1024px;
@@ -57,8 +60,6 @@ $sidebar_width:200px;
         flex-flow: column;
         margin: 0 auto;
         transition: all 1s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        // position:absolute;
-        // margin-left:calc((#{$profile-pic_width/1.2}));
         .profile-pic{
             height:190px;
             position:absolute;
@@ -138,22 +139,41 @@ $sidebar_width:200px;
     background-color: rgba(35, 35, 45, 0.50);
     padding:20px;
     width:  calc(100% - #{$sidebar_width});
+    overflow-x: hidden;
+    max-height: calc(90vh);
+    .content-title {
+        font-size:20pt;
+        position: absolute;
+        margin-top:-40px;
+        font-weight: 900;
+        font-style: italic;
+    }
     .content-wrapper{
-        overflow: scroll;
+        overflow-x: auto;
         font-size: smaller;
         .flex {
+            max-height: calc(50vh);
+            margin-bottom:100px;
             display: flex;
             flex-direction: column;
             flex-flow: row;
             flex-basis: 0;
             flex-wrap: wrap;
             .cards {
-                border:1px solid beige;
-                height:200px;
-                width:200px;
-                line-height: 0px;
-                padding:5px;
+                background-color: rgba(35, 35, 45, 0.70);
+                box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+                border:1px solid rgba(0, 0, 0, 0.1);
+                font-size: 8pt;
+                height:250px;
+                width:220px;
+                padding:20px;
                 margin:5px;
+                color:rgb(245, 245, 220,0.3);
+                &:hover {
+                    color:rgb(245, 245, 220,1);
+                    transition: all 0.3s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                }
             }
         }
         .gap-30 {
@@ -161,3 +181,44 @@ $sidebar_width:200px;
         }
     }
 }
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ffcc00 #DFE9EB;
+    transition: all 1s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+    transition: all 1s  cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+}
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #B67606;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #A3711C;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #E7961C;
+  }
+  

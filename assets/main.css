@@ -1,6 +1,7 @@
 /*! Coded by Von Miones */
 * {
   font-family: "Poppins";
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 
 .main {
   padding: 20px;
+  max-height: 100vh;
   height: 100vh;
 }
 .main .main-wrapper {
@@ -130,12 +132,23 @@ body {
   background-color: rgba(35, 35, 45, 0.5);
   padding: 20px;
   width: calc(100% - 200px);
+  overflow-x: hidden;
+  max-height: 90vh;
+}
+.content .content-title {
+  font-size: 20pt;
+  position: absolute;
+  margin-top: -40px;
+  font-weight: 900;
+  font-style: italic;
 }
 .content .content-wrapper {
-  overflow: scroll;
+  overflow-x: auto;
   font-size: smaller;
 }
 .content .content-wrapper .flex {
+  max-height: 50vh;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   flex-flow: row;
@@ -143,13 +156,61 @@ body {
   flex-wrap: wrap;
 }
 .content .content-wrapper .flex .cards {
-  border: 1px solid beige;
-  height: 200px;
-  width: 200px;
-  line-height: 0px;
-  padding: 5px;
+  background-color: rgba(35, 35, 45, 0.7);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 8pt;
+  height: 250px;
+  width: 220px;
+  padding: 20px;
   margin: 5px;
+  color: rgba(245, 245, 220, 0.3);
+}
+.content .content-wrapper .flex .cards:hover {
+  color: rgb(245, 245, 220);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .content .content-wrapper .gap-30 {
   gap: 10px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffcc00 #DFE9EB;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #B67606;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #A3711C;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #E7961C;
 }/*# sourceMappingURL=main.css.map */
