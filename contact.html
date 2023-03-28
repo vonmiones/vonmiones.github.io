@@ -1,0 +1,42 @@
+<!-- Wrapper container -->
+<div class="container flex justify-center">
+
+    <!-- Bootstrap 5 starter form -->
+    <form id="contactForm">
+  
+      <!-- Name input -->
+      <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" id="name" type="text" placeholder="Name" />
+      </div>
+  
+      <!-- Email address input -->
+      <div class="mb-3">
+        <label class="form-label" for="emailAddress">Email Address</label>
+        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+      </div>
+  
+      <!-- Message input -->
+      <div class="mb-3">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+      </div>
+  
+      <!-- Form submit button -->
+      <div class="d-grid">
+        <button class="btn yellow-01 btn-lg" type="submit">Submit</button>
+      </div>
+  
+    </form>
+  
+  </div>
+
+  <script>
+    $("form").on('submit',function (events) {
+        events.preventDefault();
+        let q = prompt("Do you want to procceed on sending your message?")
+        if(q  != null || q != undefined){
+            alert("Submitted");
+        }
+    });
+  </script>
