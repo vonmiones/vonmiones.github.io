@@ -186,8 +186,14 @@ body {
   color: rgb(245, 245, 220);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.content .content-wrapper .gap-30 {
+.content .content-wrapper .gap-10 {
   gap: 10px;
+}
+.content .content-wrapper .gap-20 {
+  gap: 20px;
+}
+.content .content-wrapper .gap-30 {
+  gap: 30px;
 }
 
 .justify-center {
