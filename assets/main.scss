@@ -18,6 +18,7 @@ body{
         width:1024px;
         background-color: rgba(35, 35, 45, 0.30);
         margin:0 auto;
+        border-radius: 50px;
     }
     .flex {
         /*! Flex Class */
@@ -157,11 +158,12 @@ $sidebar_width:200px;
         width:220px;
         padding:20px;
         color:rgb(245, 245, 220,0.3);
+        overflow: hidden;
         &:hover {
             color:rgb(245, 245, 220,1);
             transition: all 0.3s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
 
-        }   
     }
     .centerered-content {
         margin:0 auto;
@@ -190,23 +192,28 @@ $sidebar_width:200px;
         }
     }
 }
+div.breaker-border {
+    font-size: 20pt;
+    font-weight: 900;
+    font-style: italic;
+    background-color: rgb(255, 106, 0);
+    padding:5px;
+}
+
 
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #ffcc00 #DFE9EB;
-    transition: all 1s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
+    scrollbar-color: #EE5919 #DFE9EB;
   }
   
   /* Chrome, Edge and Safari */
   *::-webkit-scrollbar {
-    width: 10px;
-    width: 10px;
-    transition: all 1s  cubic-bezier(0.175, 0.885, 0.32, 1.275);  
-}
+    width: 5px;
+    width: 5px;
+  }
   *::-webkit-scrollbar-track {
-    border-radius: 5px;
+    border-radius: 19px;
     background-color: #DFE9EB;
   }
   
@@ -220,14 +227,14 @@ $sidebar_width:200px;
   
   *::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: #B67606;
+    background-color: #EE5919;
   }
   
   *::-webkit-scrollbar-thumb:hover {
-    background-color: #A3711C;
+    background-color: #D65311;
   }
   
   *::-webkit-scrollbar-thumb:active {
-    background-color: #E7961C;
+    background-color: #B75500;
   }
   
