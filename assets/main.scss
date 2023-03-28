@@ -85,6 +85,15 @@ $sidebar_width:200px;
             margin:0;
         }
     }
+    .contact-info {
+        text-align: center;
+        p {
+            font-size: 8pt;
+            line-height: 10pt;
+            padding:none;
+            margin:0;
+        }        
+    }
     .menu {
         margin:0;
         padding:0;
@@ -190,7 +199,10 @@ $sidebar_width:200px;
         }
     }
 }
-
+.justify-center{
+    justify-content: center;
+    align-items: center;
+}
 .break-title {
     display: flex;
     justify-content: center;

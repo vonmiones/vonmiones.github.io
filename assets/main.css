@@ -82,6 +82,15 @@ body {
   padding: none;
   margin: 0;
 }
+.sidebar .contact-info {
+  text-align: center;
+}
+.sidebar .contact-info p {
+  font-size: 8pt;
+  line-height: 10pt;
+  padding: none;
+  margin: 0;
+}
 .sidebar .menu {
   margin: 0;
   padding: 0;
@@ -179,6 +188,11 @@ body {
 }
 .content .content-wrapper .gap-30 {
   gap: 10px;
+}
+
+.justify-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .break-title {
