@@ -195,6 +195,9 @@ body {
 .content .content-wrapper .gap-30 {
   gap: 30px;
 }
+.content .content-wrapper .gap-40 {
+  gap: 40px;
+}
 
 .justify-center {
   justify-content: center;
