@@ -7,8 +7,10 @@
 body {
   background-image: linear-gradient(rgba(35, 35, 45, 0.8), rgba(35, 35, 45, 0.9)), url("images/mountain.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
   color: beige;
+  overflow: hidden;
 }
 
 .main {
@@ -145,6 +147,13 @@ body {
   flex-basis: 0;
 }
 
+h5 {
+  font-size: 11pt;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .content {
   background-color: rgba(35, 35, 45, 0.5);
   padding: 20px;
@@ -189,6 +198,9 @@ body {
 }
 .content .content-wrapper .flex div.cards {
   margin: 5px;
+}
+.content .content-wrapper .flex div.cards p {
+  text-align: justify;
 }
 .content .content-wrapper .flex div.cards:hover {
   color: rgb(245, 245, 220);
