@@ -137,6 +137,14 @@ body {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-flow: row;
+  flex-basis: 0;
+}
+
 .content {
   background-color: rgba(35, 35, 45, 0.5);
   padding: 20px;
