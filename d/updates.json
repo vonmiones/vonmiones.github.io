@@ -5,7 +5,7 @@
             "AppName": "MySQL Compressed Backup Tool",
             "CurrentVersion": "1.0.0.1",
             "Version": "1.0.0.1",
-            "URL": "https://github.com/vonmiones/vonmiones.github.io/releases/download/MySQLCompressedBackup/setup.exe",
+            "URL": "https://github.com/vonmiones/MySQL-Compressed-Backup/releases/download/MySQLCompressedBackupTool/setup.exe",
             "Size": "40506284",
             "ReleaseDate": "2025-11-10",
             "Description": "Bug fixes and improvements in configuration editing and auto-save features.",
