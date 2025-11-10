@@ -5,8 +5,8 @@
             "AppName": "MySQL Compressed Backup Tool",
             "CurrentVersion": "1.0.0.1",
             "Version": "1.0.0.1",
-            "URL": "https://github.com/YourUsername/YourRepo/releases/download/v1.1.0/ATTENDED_Setup_1.1.0.exe",
-            "Size": "25400",
+            "URL": "https://vonmiones.github.io/d/release/main/setup.exe",
+            "Size": "39947264",
             "ReleaseDate": "2025-11-10",
             "Description": "Bug fixes and improvements in configuration editing and auto-save features.",
             "MD5": "B6E9A8F3E1E1A8B3129AB2E14B7F8760"
