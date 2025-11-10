@@ -1,10 +1,10 @@
 {
     "updates":[
         {
-            "AppId": "{YOUR-APP-ID-GUID}",
-            "AppName": "ATTENDED Config Editor",
-            "CurrentVersion": "1.0.0",
-            "Version": "1.1.0",
+            "AppId": "{2466DDA1-B559-4DC8-A714-FA3810B9D0FF}",
+            "AppName": "MySQL Compressed Backup Tool",
+            "CurrentVersion": "1.0.0.1",
+            "Version": "1.0.0.1",
             "URL": "https://github.com/YourUsername/YourRepo/releases/download/v1.1.0/ATTENDED_Setup_1.1.0.exe",
             "Size": "25400",
             "ReleaseDate": "2025-11-10",
